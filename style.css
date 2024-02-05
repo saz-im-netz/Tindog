@@ -1,0 +1,268 @@
+*, *::after, *:hover{
+    box-sizing: border-box;
+}
+
+body, html{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*===============
+    typography
+================*/
+
+h1,
+p{
+    margin: 0;
+}
+
+h1{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #f8f8f8;
+    margin-bottom: 0.2em;
+}
+
+p{
+    font-size: 1.5rem;
+    color: #b7b7b7;
+    text-shadow: 0 0 2px black;
+}
+
+.fa-solid{
+    color: #C2BFBF;
+} 
+
+button{
+    cursor: pointer;
+}
+
+/*===============
+      layout
+================*/
+
+.container,
+header,
+main{
+    margin: 0;
+    width: 100%;    
+}
+
+header,
+main{
+    display: flex;
+    align-items: center;
+}
+header{
+    justify-content: space-between;
+    padding: 1em 1.2em;
+}
+
+main{
+    flex-direction: column;
+    position: relative;
+    padding-top: 2em;
+}
+
+.container{
+    text-align: center;
+}
+
+.profile-container{
+    position: relative;
+}
+
+.profile-text{
+    position: absolute;
+    bottom: 1em;
+    left: 1.5em;
+    text-align: left;
+}
+
+.no-more-dogs{
+    padding: 8em 0 0.5em;
+    font-size: 1.5rem;
+}
+
+.restart-container{
+    padding: 4em 0 0.5em;
+    font-weight: bold;
+    font-size: 1.5em;
+    color:#f94e67;
+    text-shadow: 0px 0px 1px rgb(138, 136, 136);
+}
+
+/*===============
+      buttons
+================*/
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+}
+
+.swipe-btn{
+    padding: 1.3em;
+    border-radius: 50%;
+    box-shadow: 0px 10px 20px 0px #E9E9EA;
+    margin: 1.5em 0.75em;
+    cursor: pointer;
+}
+
+.reject:hover{
+    background-color: #FFE7EF;
+}
+
+.accept:hover{
+    background-color: #DBFFF4;
+}
+
+.menu{
+    position: absolute;
+    right: 1em;
+    top: 0.2em;
+}
+
+.fa-solid:hover{
+    color: rgb(31, 30, 30);
+    cursor: pointer;
+}
+
+.restart-btn{
+    background-image: linear-gradient(to right, #f83474 , #fa685b);
+    background-color:  #f94e67;
+    color: white;
+    font-size: 1.25em;
+    border: none;
+    box-shadow: 0 0 1px rgb(138, 136, 136);
+    border-radius: 5px;
+    padding: 0.4em 0.8em;
+}
+.restart-btn:hover,
+.selection:hover{
+    box-shadow: 0 0 4px black;
+}
+
+.selection{
+    border: none;
+    border-radius: 5px;
+    padding: 0.4em 0.8em;
+    background-color: #d9dee6;
+    color: black;
+}
+
+/*===============
+      images
+================*/
+
+.logo{
+    height: 42px;
+}
+
+.icon{
+    height: 32px;
+}
+
+.profile-pic{
+    width: 98%;
+    border-radius: 15px;
+}
+
+
+/*===============
+      pop-up
+================*/
+
+.liked,
+.disliked{
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: left;
+}
+
+.pop-up-img{
+    transform: rotate(-30deg);
+    width: 40%;
+    margin: 40px 20px;
+}
+
+/*===============
+      modal
+================*/
+
+.liked-modal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 60px;
+    background-color: white;
+    width: 75%;
+    padding: 2em;
+    border-radius: 15px;
+    border: 2px solid gray;
+    box-shadow: 0px 10px 20px 0px black;
+}
+
+.liked-dog-item{
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    padding: 1em;
+}
+
+h2{
+    font-size: 1rem;
+    color: #b7b7b7; 
+    margin: 0; 
+}
+h3{
+    color: gray;
+    text-decoration: underline;
+    margin: 0;
+}
+
+.profile-pic-liked{
+    width: 2.5em;
+    border-radius: 50%;
+    border: 2px solid gray;
+    box-shadow: 0 0  4px black;
+}
+
+.fa-xmark{
+    position: absolute;
+    top: 12px;
+    right: 15px;
+}
+
+/*===============
+     utility
+================*/
+
+.hidden{
+    display: none;
+}
+
+
+/*===============
+   media query
+================*/
+
+@media (min-width: 550px){
+    body{
+        width: 550px;
+        margin: 0 auto;
+    }
+    .liked-modal{
+        width: 412px;
+    }
+}

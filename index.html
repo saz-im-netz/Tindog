@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tindog</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />        
+    </head>
+    <body>
+        <header>
+            <img class="icon" src="images/icon-profile.png">
+            <img class="logo" src="images/logo.png">
+            <img class="icon" src="images/icon-chat.png">   
+        </header>
+        <main>
+            <div class="container">
+                <div class="profile-container">
+                    <div class="profile">
+                        <!-- dog goes here -->
+                    </div>
+
+                    <div class="liked hidden">
+                        <img class="pop-up-img" src="images/badge-like.png">
+                    </div>
+                    <div class="disliked hidden">
+                        <img class="pop-up-img" src="images/badge-nope.png">
+                    </div>
+
+                </div>
+                <div class="btn-container">
+                    <div id="dislike-btn" class="swipe-btn reject">
+                        <img id="dislike-img" src="images/icon-cross.png">
+                    </div>
+                    <div id="like-btn" class="swipe-btn accept">
+                        <img id="like-img" src="images/icon-heart.png">
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="menu">
+                <i id="menu-icon" class="fa-solid fa-bars"></i>
+            </div>
+            
+            <div class="liked-modal hidden">
+                <i id="close-btn" class="fa-solid fa-xmark"></i>
+                <h3>Liked Dogs</h3>
+                <div class="liked-dogs-list">
+                    <!-- liked dogs go here -->  
+                </div>
+                
+            </div>
+        </main>
+
+        <script src="/index.js" type="module"></script>
+    </body>
+</html>
