@@ -23,14 +23,14 @@ p{
 }
 
 h1{
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 600;
     color: #f8f8f8;
     margin-bottom: 0.2em;
 }
 
 p{
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     color: #b7b7b7;
     text-shadow: 0 0 2px black;
 }
@@ -83,6 +83,9 @@ main{
     bottom: 1em;
     left: 1.5em;
     text-align: left;
+    background-image: linear-gradient(to right, #f83474 , #fa685b);
+    border-radius: 5px;
+    padding: 0.3em 0.6em;
 }
 
 .no-more-dogs{
