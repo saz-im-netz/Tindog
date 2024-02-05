@@ -1,7 +1,7 @@
 export const dogs = [
     {
         name: "Rex",
-        avatar: "./images/dog-rex.jpg",
+        avatar: "images/dog-rex.jpg",
         age: 25,
         bio: "Art. Literature. Natural wine. Yoga.",
         hasBeenSwiped: false,
