@@ -10,6 +10,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #f3f3f3;
 }
 
 
@@ -58,16 +59,22 @@ header,
 main{
     display: flex;
     align-items: center;
+    background-color: #ffffff;
 }
 header{
     justify-content: space-between;
     padding: 1em 1.2em;
+    margin-top: 1em;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 main{
     flex-direction: column;
     position: relative;
     padding-top: 2em;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .container{
