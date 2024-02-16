@@ -65,17 +65,19 @@ function renderNewDog(){
     currentDog = getNewDog();
     if(Object.keys(currentDog).length === 0){
         document.querySelector('.profile').innerHTML = `
-            <div class="no-more-dogs">
-                no more dogs to swipe ...
+            <div>
+                <div class="no-more-dogs">
+                    no more dogs to swipe ...
+                </div>
+                <button class="selection" id="menu-icon"> See your selection </button>
+                
+                <div class="restart-container">
+                    Not satisfied with your selection?               
+                </div>
+                <button id="restart-btn" class="restart-btn">
+                    Start again
+                </button>
             </div>
-            <button class="selection" id="menu-icon"> See your selection </button>
-            
-            <div class="restart-container">
-                Not satisfied with your selection?               
-            </div>
-            <button id="restart-btn" class="restart-btn">
-                Start again
-            </button>
             
         `; 
         document.querySelector('.btn-container').innerHTML = "";
