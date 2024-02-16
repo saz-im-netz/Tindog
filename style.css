@@ -293,3 +293,15 @@ h3{
         width: 412px;
     }
 }
+
+@media screen and (max-width: 37.5em){
+    .img-container{
+        height: 58vh;
+    }
+    header{
+        margin-top: 0;
+    }
+    body{
+        height: 100vh;
+    }
+}
